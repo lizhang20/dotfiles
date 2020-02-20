@@ -1,3 +1,6 @@
+# alias for proxychains
+abbr -a pc proxychains
+
 # colored man output
 # from http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/
 setenv LESS_TERMCAP_mb \e'[01;31m'       # begin blinking
