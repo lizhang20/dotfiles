@@ -20,7 +20,10 @@
     ~/.gitconfig: .gitconfig
     ~/.tmux.conf: .tmux.conf
     ~/.vim/: .vim/*
-    ~/.vimrc: .vimrc
+    ~/.vimrc: 
+      path: .vimrc
+      # always overwrite .vimrc
+      force: true
     ~/.config/: .config/*
     ~/.clang-format: .clang-format
 
