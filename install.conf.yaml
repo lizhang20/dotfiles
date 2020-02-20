@@ -1,8 +1,18 @@
+# because of force flag = true, 
+# note that using this script will symlink all config files shown in this directory to your machine.
+
 - defaults:
     link:
+      # when create is true, create parent directories to the link
       create: true
+      # removes old target if it's a symlink
       relink: true
-
+      # force removes the old target, file or folder
+      # if you want to change all dotfiles on this machine to dotfiles in this folder, set force=true
+      force: true
+      # glob treates * as a wildcard, so perform link operations on all matches
+      glob: true
+      
 - clean: ['~', '~/.config']
 
 - link:
@@ -12,16 +22,9 @@
     ~/.vim/: .vim/*
     ~/.vimrc: .vimrc
     ~/.config/: .config/*
+    ~/.clang-format: .clang-format
 
 - shell:
+  # sometimes you will change your .gitmodules
+  # git submodule sync to copy the new configuration from .gitmodules to .git/config
   - git submodule sync --recursive
-  # the following have to run after linking ~/.gitconfig
-  - git update-submodules
-  - >
-    git cleanall -f
-    emacs.d/vendor/
-    irssi/scripts/vendor/
-    jupyter/nbextensions/
-    shell/plugins/
-    vim/bundle/
-    zsh/plugins/
