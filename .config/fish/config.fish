@@ -1,5 +1,8 @@
-# alias for proxychains
 abbr -a pc proxychains
+abbr -a gs "git status"
+abbr -a ga "git add"
+abbr -a gm "git commit"
+abbr -a gp "git push"
 
 # colored man output
 # from http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/
