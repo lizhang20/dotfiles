@@ -20,6 +20,8 @@ This repository is powered by [dotbot](https://github.com/anishathalye/dotbot). 
 
 - pip: `.config/pip/`
 
+Note that `.config/fish/functions/fzf_key_bindings.fish` is a symbolic link, need to [install fzf](https://github.com/junegunn/fzf).
+
 ## git submodules
 
 Dotbot, vim plugins are git submodules of this repo.
