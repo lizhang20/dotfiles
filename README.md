@@ -1,8 +1,8 @@
-## Management of My Dotfiles
+# Management of My Dotfiles
 
 This repository is powered by [dotbot](https://github.com/anishathalye/dotbot). After clone this repo, run `install` to set up the development environment automatically according to config file `install.conf.yaml`. Running multiple times of `install` will not cause side effects.
 
-### Current dotfiles in this repo
+## Current dotfiles in this repo
 
 - bash: `.bashrc`
 
@@ -20,7 +20,7 @@ This repository is powered by [dotbot](https://github.com/anishathalye/dotbot). 
 
 - pip: `.config/pip/`
 
-### git submodules
+## git submodules
 
 Dotbot, vim plugins are git submodules of this repo.
 
@@ -36,7 +36,7 @@ Add vim plugins to specific folder:
 git submodule add https://github.com/itchyny/lightline.vim .vim/pack/vendor/start/lightline
 ```
 
-### Installation configuration
+## Installation configuration
 
 My configuration is based on [anish's install configuration](https://github.com/anishathalye/dotfiles/blob/master/.install.conf.yaml).
 
@@ -87,7 +87,7 @@ I will set `force: true` to remove old dotfiles and relink them to those in this
   - git submodule sync --recursive
 ```
 
-### Ref links
+## Ref links
 
 1. [Anish: Managing Your Dotfiles](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/)
 
