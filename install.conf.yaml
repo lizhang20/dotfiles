@@ -10,7 +10,7 @@
       # force removes the old target, file or folder
       # if you want to change all dotfiles on this machine to dotfiles in this folder, set force=true
       # force: true
-      # glob treates * as a wildcard, so perform link operations on all matches
+      # glob treats * as a wildcard, so perform link operations on all matches
       glob: true
       
 - clean: ['~', '~/.config']
