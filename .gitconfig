@@ -3,5 +3,11 @@
 	email = piaoliangkb@gmail.com
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore_global
 [merge]
 	tool = vimdiff
+[alias]
+        # git log history with all
+        gra = log --all --graph --decorate
+        # git log history with oneline
+        gro = log --all --graph --decorate --oneline
