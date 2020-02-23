@@ -3,3 +3,5 @@
 	email = piaoliangkb@gmail.com
 [core]
 	editor = vim
+[merge]
+	tool = vimdiff
