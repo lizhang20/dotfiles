@@ -12,7 +12,7 @@ This repository is powered by [dotbot](https://github.com/anishathalye/dotbot). 
 
 - tmux: `.tmux.conf`
 
-- git: `.gitconfig`
+- git: `.gitconfig`, `.gitignore_global`
 
 - clang: `.clang-format`
 
@@ -45,6 +45,8 @@ My configuration is based on [anish's install configuration](https://github.com/
 I will set `force: true` to remove old dotfiles and relink them to those in this folder/repository. By default, dotbot will not remove and relink exist dotfiles.
 
 [Dotbot configuration Docs](https://github.com/anishathalye/dotbot#configuration)
+
+Here is an example below:
 
 ```yaml
 # because of force flag = true, 
