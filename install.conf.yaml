@@ -40,3 +40,4 @@
   # sometimes you will change your .gitmodules
   # git submodule sync to copy the new configuration from .gitmodules to .git/config
   - git submodule sync --recursive
+  - git update-submodules
