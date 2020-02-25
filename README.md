@@ -44,6 +44,12 @@ Add vim plugins to specific folder:
 git submodule add https://github.com/itchyny/lightline.vim .vim/pack/vendor/start/lightline
 ```
 
+Vim plugin: 
+
+- `ale` use `shellcheck` to check shells.
+
+- `ale` use `pylint` and `autopep8` for python codes.
+
 ## Installation configuration
 
 My configuration is based on [anish's install configuration](https://github.com/anishathalye/dotfiles/blob/master/.install.conf.yaml).
