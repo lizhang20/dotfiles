@@ -2,6 +2,12 @@
 
 This repository is powered by [dotbot](https://github.com/anishathalye/dotbot). After clone this repo, run `install` to set up the development environment automatically according to config file `install.conf.yaml`. Running multiple times of `install` will not cause side effects.
 
+To clone all submodules in this repo, use `git clone --recursive https://github.com/piaoliangkb/dotfiles.git ~/.dotfile`.
+
+Or you can use `git submodule init; git submodule update` in your exist folder to clone submodules repos.
+
+[Questions see here](https://stackoverflow.com/questions/43686630/gitsubmodules-are-not-being-pulled-when-cloning-project)
+
 ## Current dotfiles in this repo
 
 - bash: `.bashrc`
