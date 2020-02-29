@@ -94,3 +94,12 @@ let g:ale_sign_warning = '?'
 " use ctrl+k & ctrl+j to quick move in wraps
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-J> <Plug>(ale_next_wrap)
+
+" code indent 
+set cindent
+
+" use 4 spaces instead of tabs during formatting
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
