@@ -1,4 +1,4 @@
-# Compiled source #
+
 ###################
 *.com
 *.class
@@ -22,6 +22,7 @@
 ######################
 *.log
 *.sqlite
+*.db
 
 # OS generated files #
 ######################
@@ -33,3 +34,11 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# VSCode #
+##########
+.vscode
+
+# Things about Python #
+#######################
+.mypy_cache
