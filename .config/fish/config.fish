@@ -26,20 +26,29 @@ end
 # [date] LaptopName: Username | currentDir (git info) >>> ...
 # Current configuration in functions/fish_prompt.fish
 #
-# function fish_prompt
-#     set_color brblack
-#     echo -n "["(date "+%H:%M")"] "
-#     set_color blue
-#     echo -n (hostname)
-#     if [ $PWD != $HOME ]
-#         set_color brblack
-#         echo -n ':'
-#         set_color yellow
-#         echo -n (basename $PWD)
-#     end
-#     set_color green
-#     printf '%s ' (__fish_git_prompt)
-#     set_color red
-#     echo -n '| '
-#     set_color normal
-# end
+function fish_prompt
+    set_color brblack
+    echo -n "["(date "+%H:%M")"] "
+
+    # Show current directory
+    set_color yellow
+    echo -n (prompt_pwd)
+
+    # Blue host name.
+    # set_color blue
+    # echo -n (hostname)
+
+    # Only show current folder name if not in $HOME
+    # if [ $PWD != $HOME ]
+        # set_color brblack
+        # echo -n ':'
+        # set_color yellow
+        # echo -n (basename $PWD)
+    # end
+
+    set_color green
+    printf '%s ' (__fish_git_prompt)
+    set_color red
+    echo -n (set_color red)'❯'(set_color yellow)'❯'(set_color green)'❯ '
+    set_color normal
+end
