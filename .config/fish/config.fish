@@ -30,13 +30,13 @@ function fish_prompt
     set_color brblack
     echo -n "["(date "+%H:%M")"] "
 
+    # Blue host name.
+    set_color blue
+    echo -n (hostname)" "
+
     # Show current directory
     set_color yellow
     echo -n (prompt_pwd)
-
-    # Blue host name.
-    # set_color blue
-    # echo -n (hostname)
 
     # Only show current folder name if not in $HOME
     # if [ $PWD != $HOME ]
