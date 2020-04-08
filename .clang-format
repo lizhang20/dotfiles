@@ -1,4 +1,14 @@
+# Use 'clang-format -style=llvm -dump-config > .clang-format' to generate a file with all configuration options of a certain predefined style.
 BasedOnStyle: LLVM
+
+# Like public, private, protected
 AccessModifierOffset: -4
+
 IndentWidth: 4
 TabWidth: 4
+
+# BasedOnStyle: LLVM, the default value is Right
+PointerAlignment: Right
+
+# The maximum number of consecutive empty lines to keep 
+MaxEmptyLinesToKeep: 1

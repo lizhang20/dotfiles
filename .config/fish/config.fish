@@ -1,3 +1,4 @@
+abbr -a s screenfetch
 abbr -a pc proxychains
 abbr -a gs "git status"
 abbr -a ga "git add"

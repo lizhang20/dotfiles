@@ -96,7 +96,7 @@ nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-J> <Plug>(ale_next_wrap)
 
 " code indent 
-set cindent
+set smartindent
 
 " use 4 spaces instead of tabs during formatting
 set expandtab
