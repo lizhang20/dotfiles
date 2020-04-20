@@ -17,8 +17,8 @@ setenv LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 
 function fish_greeting
 	echo
-	echo -e (uname -ro | awk '{print " \\\\e[1mOS: \\\\e[0;32m"$0"\\\\e[0m"}')
-	echo -e (uptime -p | sed 's/^up //' | awk '{print " \\\\e[1mUptime: \\\\e[0;32m"$0"\\\\e[0m"}')
+	echo -e (uname -s | awk '{print " \\\\e[1mOS: \\\\e[0;32m"$0"\\\\e[0m"}')
+	echo -e (uptime | sed 's/^up //' | awk '{print " \\\\e[1mUptime: \\\\e[0;32m"$0"\\\\e[0m"}')
 	echo -e (uname -n | awk '{print " \\\\e[1mHostname: \\\\e[0;32m"$0"\\\\e[0m"}')
         echo		
 end
@@ -32,8 +32,8 @@ function fish_prompt
     echo -n "["(date "+%H:%M")"] "
 
     # Blue host name.
-    set_color blue
-    echo -n (hostname)" "
+    # set_color blue
+    # echo -n "zli "
 
     # Show current directory
     set_color yellow
