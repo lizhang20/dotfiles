@@ -14,7 +14,7 @@ Or you can use `git submodule init; git submodule update` in your exist folder t
 
 - vim: `.vimrc`,  `.vim/`
 
-- fish: `.config/fish/`
+- fish: `.config/fish/` 
 
 - tmux: `.tmux.conf`
 
@@ -22,11 +22,6 @@ Or you can use `git submodule init; git submodule update` in your exist folder t
 
 - clang: `.clang-format`
 
-- htop: `.config/htop/`
-
-- pip: `.config/pip/`
-
-Note that `.config/fish/functions/fzf_key_bindings.fish` is a symbolic link, need to [install fzf](https://github.com/junegunn/fzf).
 
 ## git submodules
 
@@ -58,50 +53,6 @@ I will set `force: true` to remove old dotfiles and relink them to those in this
 
 [Dotbot configuration Docs](https://github.com/anishathalye/dotbot#configuration)
 
-Here is an example below:
-
-```yaml
-# because of force flag = true, 
-# note that using this script will symlink all config files shown in this directory to your machine.
-
-- defaults:
-    link:
-      # when create is true, create parent directories to the link
-      create: true
-      # removes old target if it's a symlink
-      relink: true
-      # force removes the old target, file or folder
-      # if you want to change all dotfiles on this machine to dotfiles in this folder, set force=true
-      # force: true
-      # glob treats * as a wildcard, so perform link operations on all matches
-      glob: true
-      
-- clean: ['~', '~/.config']
-
-- link:
-    ~/.bashrc: .bashrc
-
-    ~/.gitconfig: .gitconfig
-
-    ~/.tmux.conf: .tmux.conf
-
-    ~/.vim/: .vim/*
-
-    ~/.vimrc: 
-      path: .vimrc
-      # always overwrite .vimrc
-      force: true
-
-    # fish, htop, pip
-    ~/.config/: .config/*
-
-    ~/.clang-format: .clang-format
-
-- shell:
-  # sometimes you will change your .gitmodules
-  # git submodule sync to copy the new configuration from .gitmodules to .git/config
-  - git submodule sync --recursive
-```
 
 ## Ref links
 
