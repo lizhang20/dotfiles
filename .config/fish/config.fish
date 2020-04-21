@@ -17,7 +17,7 @@ setenv LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 
 function fish_greeting
 	echo
-	echo -e (uptime -p | sed 's/^up //' | awk '{print " \\\\e[1mUptime: \\\\e[0;32m"$0"\\\\e[0m"}')
+	echo -e (uptime | sed 's/^up //' | awk '{print " \\\\e[1mUptime: \\\\e[0;32m"$0"\\\\e[0m"}')
     echo		
 end
 
