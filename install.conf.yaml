@@ -31,8 +31,8 @@
       # always overwrite .vimrc
       force: true
 
-    # fish, htop, pip
-    ~/.config/: .config/*
+    # fish
+    ~/.config/fish/config.fish: .config/fish/config.fish
 
     ~/.clang-format: .clang-format
 
