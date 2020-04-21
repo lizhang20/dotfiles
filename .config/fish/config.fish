@@ -53,3 +53,8 @@ function fish_prompt
     echo -n (set_color red)'❯'(set_color yellow)'❯'(set_color green)'❯ '
     set_color normal
 end
+
+if test -f ~/.fish.config.local
+    source ~/.fish.config.local
+end
+
