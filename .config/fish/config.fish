@@ -17,6 +17,8 @@ setenv LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 
 function fish_greeting
 	echo
+    # Line below can work on macOS and Linux,
+    # Output format is "Uptime: ** days ** hours ** minutes"
 	echo -e (uptime | sed -E 's/.*up (.*days),.*([0-9]+):([0-9]+),.*/ \\\\e[1mUptime: \\\\e[0;32m\1 \2 hours \3 minutes/')
     echo		
 end
