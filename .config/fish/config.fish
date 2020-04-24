@@ -5,6 +5,15 @@ abbr -a ga "git add"
 abbr -a gm "git commit"
 abbr -a gp "git push"
 
+
+# Use 'exa' replace 'ls'
+if command -v exa > /dev/null
+	abbr -a l 'exa'
+	abbr -a ls 'exa'
+	abbr -a ll 'exa -l'
+    abbr -a la 'exa -la'
+end
+
 # colored man output
 # from http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/
 setenv LESS_TERMCAP_mb \e'[01;31m'       # begin blinking
