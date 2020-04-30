@@ -14,3 +14,9 @@
 [submodule ".vim/pack/vendor/start/ack.vim"]
 	path = .vim/pack/vendor/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule ".vim/pack/vendor/start/vim-silicon"]
+	path = .vim/pack/vendor/start/vim-silicon
+	url = https://github.com/segeljakt/vim-silicon.git
+[submodule ".vim/pack/vendor/start/rust.vim"]
+	path = .vim/pack/vendor/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim

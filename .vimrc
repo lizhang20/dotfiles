@@ -88,13 +88,6 @@ colorscheme molokai
 " highlight current line
 set cursorline
 
-" plugin - ale.vim
-let g:ale_sign_warning = '?'
-
-" use ctrl+k & ctrl+j to quick move in wraps
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-J> <Plug>(ale_next_wrap)
-
 " code indent 
 set smartindent
 
@@ -106,3 +99,39 @@ set softtabstop=4
 
 " copy to system clipboard
 set clipboard=unnamed
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""BELOW LINES ARE VIM PLUGINS""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" plugin - ale.vim
+let g:ale_sign_warning = '?'
+
+" use ctrl+k & ctrl+j to quick move in wraps
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-J> <Plug>(ale_next_wrap)
+
+" plugin - silicon.vim
+" this plugin is used to generate code snippets in image format
+" below lines are default configuration
+" see more info in https://github.com/segeljakt/vim-silicon
+let g:silicon = {
+      \   'theme':               'Github',
+      \   'font':                  'Hack',
+      \   'background':         '#AAAAFF',
+      \   'shadow-color':       '#555555',
+      \   'line-pad':                   2,
+      \   'pad-horiz':                 80,
+      \   'pad-vert':                 100,
+      \   'shadow-blur-radius':         0,
+      \   'shadow-offset-x':            0,
+      \   'shadow-offset-y':            0,
+      \   'line-number':           v:true,
+      \   'round-corner':          v:true,
+      \   'window-controls':       v:true,
+      \ }
+
