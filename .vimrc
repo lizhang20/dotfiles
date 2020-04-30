@@ -120,13 +120,13 @@ nmap <silent> <C-J> <Plug>(ale_next_wrap)
 " below lines are default configuration
 " see more info in https://github.com/segeljakt/vim-silicon
 let g:silicon = {
-      \   'theme':               'Github',
+      \   'theme':              'Dracula',
       \   'font':                  'Hack',
       \   'background':         '#AAAAFF',
       \   'shadow-color':       '#555555',
       \   'line-pad':                   2,
-      \   'pad-horiz':                 80,
-      \   'pad-vert':                 100,
+      \   'pad-horiz':                  0,
+      \   'pad-vert':                   0,
       \   'shadow-blur-radius':         0,
       \   'shadow-offset-x':            0,
       \   'shadow-offset-y':            0,
