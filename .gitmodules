@@ -20,3 +20,6 @@
 [submodule ".vim/pack/vendor/start/rust.vim"]
 	path = .vim/pack/vendor/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule ".vim/pack/vendor/start/vim-sneak"]
+	path = .vim/pack/vendor/start/vim-sneak
+	url = git://github.com/justinmk/vim-sneak.git
