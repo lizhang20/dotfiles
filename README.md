@@ -1,5 +1,7 @@
 # Management of My Dotfiles
 
+## Quick start
+
 This repository is powered by [dotbot](https://github.com/anishathalye/dotbot). After clone this repo, run `install` to set up the development environment automatically according to config file `install.conf.yaml`. Running multiple times of `install` will not cause side effects.
 
 To clone all submodules in this repo, use `git clone --recursive https://github.com/piaoliangkb/dotfiles.git ~/.dotfile`.
@@ -23,7 +25,7 @@ Or you can use `git submodule init; git submodule update` in your exist folder t
 - clang: `.clang-format`
 
 
-## git submodules
+## Git submodules
 
 Dotbot, vim plugins are git submodules of this repo.
 
