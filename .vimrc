@@ -135,3 +135,15 @@ let g:silicon = {
       \   'window-controls':       v:true,
       \ }
 
+
+" plugin - vim-sneak
+
+" By default, sneak use s as the leader key for search,
+" but I am familier with using s as substitute key.
+" So I will remap f and F using vim-sneak.
+map f <Plug>Sneak_s
+map F <Plug>Sneak_S
+
+" A better t and T with highlight and using ';' for next, ',' for prev
+map t <Plug>Sneak_t
+map T <Plug>Sneak_T
