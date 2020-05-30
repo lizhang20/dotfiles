@@ -23,3 +23,6 @@
 [submodule ".vim/pack/vendor/start/vim-sneak"]
 	path = .vim/pack/vendor/start/vim-sneak
 	url = git://github.com/justinmk/vim-sneak.git
+[submodule ".vim/pack/vendor/start/vim-multiple-cursors"]
+	path = .vim/pack/vendor/start/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
