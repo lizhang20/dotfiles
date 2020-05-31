@@ -42,3 +42,10 @@ Thumbs.db
 # Things about Python #
 #######################
 .mypy_cache
+venv/
+.venv/
+
+# idea #
+########
+.idea/
+
