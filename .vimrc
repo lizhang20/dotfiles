@@ -89,7 +89,11 @@ colorscheme molokai
 set cursorline
 
 " code indent 
-set smartindent
+" you can use 'S' to enter insert mode at correct indent (now cannot work
+" on python files)
+" https://stackoverflow.com/questions/18415492/autoindent-is-subset-of-smartindent-in-vim
+filetype plugin indent on
+set autoindent
 
 " use 4 spaces instead of tabs during formatting
 set expandtab
