@@ -16,6 +16,15 @@ if command -v exa > /dev/null
     abbr -a la 'exa -la'
 end
 
+# If have diff-so-fancy installed and setup with git,
+# use `git diff --no-index` replace diff in not git repository,
+# else if have `colordiff`, use 'colordiff' replace 'diff'
+if command -v diff-so-fancy > /dev/null
+    abbr -a diff 'git diff --no-index'
+else if command -v colordiff > /dev/null
+    abbr -a diff 'colordiff'
+end
+
 # colored man output
 # from http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/
 setenv LESS_TERMCAP_mb \e'[01;31m'       # begin blinking
