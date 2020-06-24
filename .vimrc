@@ -95,6 +95,13 @@ set cursorline
 filetype plugin indent on
 set autoindent
 
+" remap '>' in visual line mode to re-select visual mode
+" so you can quickly select some lines and use '>' or '<' multiple times.
+" if not set time, you must use as following: select some lines in visual line
+" mode, then input 'x>' or 'x<' where x is a number.
+vnoremap < <gv
+vnoremap > >gv
+
 " use 4 spaces instead of tabs during formatting
 set expandtab
 set tabstop=4
