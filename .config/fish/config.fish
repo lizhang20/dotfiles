@@ -78,6 +78,3 @@ if test -f ~/.fish.config.local
     source ~/.fish.config.local
 end
 
-# set terminal installed things with EN-lang
-# https://stackoverflow.com/questions/14189134/how-to-change-git-from-chinese-to-english-in-mac
-export LC_ALL=en_US.UTF-8
