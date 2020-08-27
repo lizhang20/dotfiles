@@ -9,6 +9,7 @@ abbr -a gp "git push"
 
 
 # Use 'exa' replace 'ls'
+#
 if command -v exa > /dev/null
 	abbr -a l 'exa'
 	abbr -a ls 'exa'
@@ -16,17 +17,21 @@ if command -v exa > /dev/null
     abbr -a la 'exa -la'
 end
 
+
 # If have diff-so-fancy installed and setup with git,
 # use `git diff --no-index` replace diff in not git repository,
 # else if have `colordiff`, use 'colordiff' replace 'diff'
+#
 if command -v diff-so-fancy > /dev/null
     abbr -a diff 'git diff --no-index'
 else if command -v colordiff > /dev/null
     abbr -a diff 'colordiff'
 end
 
+
 # colored man output
 # from http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/
+#
 setenv LESS_TERMCAP_mb \e'[01;31m'       # begin blinking
 setenv LESS_TERMCAP_md \e'[01;38;5;74m'  # begin bold
 setenv LESS_TERMCAP_me \e'[0m'           # end mode
@@ -35,6 +40,7 @@ setenv LESS_TERMCAP_so \e'[38;5;246m'    # begin standout-mode - info box
 setenv LESS_TERMCAP_ue \e'[0m'           # end underline
 setenv LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 
+
 function fish_greeting
 	echo
     # Line below can work on macOS and Linux,
@@ -42,6 +48,7 @@ function fish_greeting
 	echo -e (uptime | sed -E 's/.*up (.*days),.*([0-9]+):([0-9]+),.*/ \\\\e[1mUptime: \\\\e[0;32m\1 \2 hours \3 minutes/')
     echo		
 end
+
 
 # Below lines will change fish prompt format like 
 # [date] LaptopName: Username | currentDir (git info) >>> ...
@@ -74,6 +81,16 @@ function fish_prompt
     set_color normal
 end
 
+
+# using 'sdl' performs like `sudo !!` in bash
+#
+function sdl
+    eval command sudo $history[1]
+end
+
+
+# import fish local config
+#
 if test -f ~/.fish.config.local
     source ~/.fish.config.local
 end
