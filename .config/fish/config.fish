@@ -7,6 +7,9 @@ abbr -a ga "git add"
 abbr -a gm "git commit"
 abbr -a gp "git push"
 
+# Unix timestamp
+abbr -a timestamp "date +%s"
+
 
 # Use 'exa' replace 'ls'
 #
