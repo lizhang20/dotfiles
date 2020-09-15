@@ -88,6 +88,8 @@ end
 # using 'sdl' performs like `sudo !!` in bash
 #
 function sdl
+    echo "sudo $history[1]"
+    echo ""
     eval command sudo $history[1]
 end
 

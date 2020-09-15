@@ -114,7 +114,7 @@ set clipboard=unnamed
 set guifont=Monaco\ Regular:h14
 
 " visual mode color
-hi Visual  guifg=White guibg=LightBlue gui=none
+hi Visual guifg=White guibg=LightBlue gui=none
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
