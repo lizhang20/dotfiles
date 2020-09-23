@@ -1,6 +1,7 @@
 abbr -a s screenfetch
 abbr -a pc proxychains
 abbr -a tl tldr
+abbr -a k kubectl
 
 abbr -a gs "git status"
 abbr -a ga "git add"
