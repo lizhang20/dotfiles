@@ -1,8 +1,13 @@
 abbr -a s screenfetch
 abbr -a pc proxychains
 abbr -a tl tldr
-abbr -a k kubectl
 
+# Kubernetes
+abbr -a k kubectl
+abbr -a kd "kubectl delete -f"
+abbr -a ka "kubectl apply -f"
+
+# Git
 abbr -a gs "git status"
 abbr -a ga "git add"
 abbr -a gm "git commit"
