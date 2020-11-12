@@ -29,3 +29,6 @@
 [submodule ".vim/pack/vendor/start/vim-go"]
 	path = .vim/pack/vendor/start/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule ".vim/pack/vendor/start/wildfire.vim"]
+	path = .vim/pack/vendor/start/wildfire.vim
+	url = https://github.com/gcmt/wildfire.vim.git

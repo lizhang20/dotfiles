@@ -1,0 +1,3 @@
+# Using symbolic link all plugins will be installed in real ~/.config/nvim/plugged/
+# but not in this directory
+plugged/

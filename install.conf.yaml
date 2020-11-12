@@ -36,6 +36,8 @@
 
     ~/.clang-format: .clang-format
 
+    ~/.config/nvim/: .config/nvim/*
+
 - shell:
   # - git submodule init
   # - git submodule update
