@@ -3,17 +3,20 @@ abbr -a pc proxychains
 abbr -a tl tldr
 
 # Kubernetes
+#
 abbr -a k kubectl
 abbr -a kd "kubectl delete -f"
 abbr -a ka "kubectl apply -f"
 
 # Git
+#
 abbr -a gs "git status"
 abbr -a ga "git add"
 abbr -a gm "git commit"
 abbr -a gp "git push"
 
 # Unix timestamp
+#
 abbr -a timestamp "date +%s"
 
 
