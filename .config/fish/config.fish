@@ -102,6 +102,14 @@ function sdl
     eval command sudo $history[1]
 end
 
+# using 'pl' performs `proxychains (last-command)`
+#
+function pl
+    echo "proxychains $history[1]"
+    echo ""
+    eval command proxychains $history[1]
+end
+
 
 # import fish local config
 #
