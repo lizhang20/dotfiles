@@ -67,8 +67,8 @@ end
 # Current configuration in functions/fish_prompt.fish
 #
 function fish_prompt
-    set_color brblack
-    echo -n "["(date "+%H:%M")"] "
+    # set_color brblack
+    # echo -n "["(date "+%H:%M")"] "
 
     # Blue host name.
     # set_color blue
@@ -76,12 +76,10 @@ function fish_prompt
 
     # Show current directory
     set_color yellow
-    echo -n (prompt_pwd)
+    echo -n ' '(prompt_pwd)
 
     # Only show current folder name if not in $HOME
-    # if [ $PWD != $HOME ]
-        # set_color brblack
-        # echo -n ':'
+    #if [ $PWD != $HOME ]
         # set_color yellow
         # echo -n (basename $PWD)
     # end
