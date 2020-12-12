@@ -47,6 +47,12 @@ Vim plugin:
 
 - `ale` use `pylint` and `autopep8` for python codes.
 
+Remove submodule:
+
+```
+git rm .vim/pack/vendor/start/some-submodule
+```
+
 ## Installation configuration
 
 My configuration is based on [anish's install configuration](https://github.com/anishathalye/dotfiles/blob/master/.install.conf.yaml).
