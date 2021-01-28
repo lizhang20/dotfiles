@@ -17,7 +17,6 @@
 \#*\#
 \.#*
 .ipynb_checkpoints/
-.vscode/
 
 # Logs and databases #
 ######################
@@ -45,6 +44,7 @@ Thumbs.db
 .mypy_cache
 venv/
 .venv/
+__pycache__/
 
 # idea #
 ########
