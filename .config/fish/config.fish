@@ -19,6 +19,10 @@ abbr -a gp "git push"
 #
 abbr -a timestamp "date +%s"
 
+# Command-line history
+#
+abbr -a his "history | awk '{print \$1}' | sort | uniq -c | sort | tail -n10"
+
 
 # Use 'exa' replace 'ls'
 #
