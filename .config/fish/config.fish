@@ -31,6 +31,7 @@ if command -v exa > /dev/null
 	abbr -a ls 'exa'
 	abbr -a ll 'exa -l'
     abbr -a la 'exa -la'
+    abbr -a tree 'exa --tree' # --level can be set by user
 end
 
 
