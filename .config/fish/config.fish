@@ -27,9 +27,9 @@ abbr -a his "history | awk '{print \$1}' | sort | uniq -c | sort | tail -n10"
 # Use 'exa' replace 'ls'
 #
 if command -v exa > /dev/null
-	abbr -a l 'exa'
-	abbr -a ls 'exa'
-	abbr -a ll 'exa -l'
+    abbr -a l 'exa'
+    abbr -a ls 'exa'
+    abbr -a ll 'exa -l'
     abbr -a la 'exa -la'
     abbr -a tree 'exa --tree' # --level can be set by user
 end
@@ -59,10 +59,10 @@ setenv LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 
 
 function fish_greeting
-	echo
+    echo
     # Line below can work on macOS and Linux,
     # Output format is "Uptime: ** days ** hours ** minutes"
-	echo -e (uptime | sed -E 's/.*up (.*days),.*([0-9]+):([0-9]+),.*/ \\\\e[1mUptime: \\\\e[0;32m\1 \2 hours \3 minutes/')
+    echo -e (uptime | sed -E 's/.*up (.*days),.*([0-9]+):([0-9]+),.*/ \\\\e[1mUptime: \\\\e[0;32m\1 \2 hours \3 minutes/')
     echo		
 end
 
