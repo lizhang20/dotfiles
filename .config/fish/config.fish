@@ -29,7 +29,8 @@ abbr -a his "history | awk '{print \$1}' | sort | uniq -c | sort | tail -n10"
 if command -v exa > /dev/null
     abbr -a l 'exa'
     abbr -a ls 'exa'
-    abbr -a ll 'exa -l'
+    # ll with newest-order
+    abbr -a ll 'exa -l --sort=newest'
     abbr -a la 'exa -la'
     abbr -a tree 'exa --tree' # --level can be set by user
 end
