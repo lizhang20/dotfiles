@@ -2,13 +2,11 @@
 
 ## Quick start
 
-This repository is powered by [dotbot](https://github.com/anishathalye/dotbot). After clone this repo, run `install` to set up the development environment automatically according to config file `install.conf.yaml`. Running multiple times of `install` will not cause side effects.
+This repository is powered by [dotbot](https://github.com/anishathalye/dotbot). After cloning this repo, run `install` to set up the development environment automatically according to config file `install.conf.yaml`. Running multiple times of `install` will not cause side effects.
 
 To clone all submodules in this repo, use `git clone --recursive https://github.com/piaoliangkb/dotfiles.git ~/.dotfile`.
 
-Or you can use `git submodule init; git submodule update` in your exist folder to clone submodules repos.
-
-[Questions see here](https://stackoverflow.com/questions/43686630/gitsubmodules-are-not-being-pulled-when-cloning-project)
+Or you can use `git submodule init; git submodule update` in your exist folder to clone submodules repos. [Corresponding questions see here](https://stackoverflow.com/questions/43686630/gitsubmodules-are-not-being-pulled-when-cloning-project)
 
 ## Current dotfiles in this repo
 
@@ -41,12 +39,6 @@ Add vim plugins to specific folder:
 git submodule add https://github.com/itchyny/lightline.vim .vim/pack/vendor/start/lightline
 ```
 
-Vim plugin: 
-
-- `ale` use `shellcheck` to check shells.
-
-- `ale` use `pylint` and `autopep8` for python codes.
-
 Remove submodule:
 
 ```
@@ -57,7 +49,7 @@ git rm .vim/pack/vendor/start/some-submodule
 
 My configuration is based on [anish's install configuration](https://github.com/anishathalye/dotfiles/blob/master/.install.conf.yaml).
 
-I will set `force: true` to remove old dotfiles and relink them to those in this folder/repository. By default, dotbot will not remove and relink exist dotfiles.
+Set `force: true` to remove old dotfiles and relink them to those in this folder/repository. (*Not recommended!!*) By default, dotbot will not remove and relink exist dotfiles.
 
 [Dotbot configuration Docs](https://github.com/anishathalye/dotbot#configuration)
 
