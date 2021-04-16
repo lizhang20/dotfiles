@@ -16,13 +16,16 @@ abbr -a gm "git commit"
 abbr -a gp "git push"
 
 # Unix timestamp
-#
-abbr -a timestamp "date +%s"
+# Notice that postfic "%N" only works on Linux
+abbr -a timestamp "date +%s.%N"
 
 # Command-line history
 #
 abbr -a his "history | awk '{print \$1}' | sort | uniq -c | sort | tail -n10"
 
+# VPN using openconnect
+#
+abbr -a vpn "sudo openconnect --protocol=gp vpn.bupt.edu.cn"
 
 # Use 'exa' replace 'ls'
 #
