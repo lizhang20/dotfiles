@@ -1,4 +1,3 @@
-abbr -a s screenfetch
 abbr -a pc proxychains
 abbr -a tl tldr
 
