@@ -1,3 +1,7 @@
+# Need to use abbr --erase or -e to remove prev screenfetch abbreviation
+# Ref: https://fishshell.com/docs/current/cmds/abbr.html
+abbr -e s
+
 abbr -a pc proxychains
 abbr -a tl tldr
 
