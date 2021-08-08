@@ -19,7 +19,7 @@ abbr -a gm "git commit"
 abbr -a gp "git push"
 
 # Unix timestamp
-# Notice that postfic "%N" only works on Linux
+# Notice that postfix "%N" only works on Linux
 abbr -a timestamp "date +%s.%N"
 
 # Command-line history
