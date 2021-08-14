@@ -4,6 +4,7 @@
 
 abbr -a pc proxychains
 abbr -a tl tldr
+abbr -a dig "dig +nostats +nocomments +nocmd"
 
 # Kubernetes
 #
