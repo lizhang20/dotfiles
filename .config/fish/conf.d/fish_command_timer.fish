@@ -70,7 +70,8 @@ end
 #
 # If empty, disables printing of current time.
 if not set -q fish_command_timer_time_format
-  set fish_command_timer_time_format '%b %d %I:%M%p'
+  # set fish_command_timer_time_format '%b %d %I:%M%p'  # Old: [Month Day|Time AM/PM]
+  set fish_command_timer_time_format '%I:%M%p'
 end
 
 # Whether to print command timings up to millisecond precision.
@@ -231,13 +232,13 @@ function fish_command_timer_postexec -e fish_postexec
   end
 
 
-  # Compute timing string (e.g. [ 1s016 | Oct 01 11:11PM ])
+  # Compute timing string (e.g. [1s016|Oct 01 11:11PM])
   set -l timing_str
   set -l now_str (fish_command_timer_print_time $command_end_time)
   if [ -n "$now_str" ]
-    set timing_str "[ $cmd_duration_str | $now_str ]"
+    set timing_str "[$cmd_duration_str|$now_str]"
   else
-    set timing_str "[ $cmd_duration_str ]"
+    set timing_str "[$cmd_duration_str]"
   end
   set -l timing_str_length (fish_command_timer_strlen "$timing_str")
 
