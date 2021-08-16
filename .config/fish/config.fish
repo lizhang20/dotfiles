@@ -21,7 +21,7 @@ abbr -a gp "git push"
 
 # Unix timestamp
 # Notice that postfix "%N" only works on Linux
-abbr -a timestamp "date +%s.%N"
+abbr -a timestamp "date +%s%3N"
 
 # Command-line history
 #
