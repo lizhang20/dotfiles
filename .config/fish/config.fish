@@ -16,7 +16,7 @@ abbr -a ka "kubectl apply -f"
 #
 abbr -a gs "git status"
 abbr -a ga "git add"
-abbr -a gm "git commit"
+abbr -a gm "git commit -m"
 abbr -a gp "git push"
 abbr -a gap "git add -p"
 
