@@ -2,6 +2,9 @@
 # Ref: https://fishshell.com/docs/current/cmds/abbr.html
 # Such as: abbr -e s
 
+abbr -a f ffmpeg
+abbr -a mv "mv -v"
+
 abbr -a pc proxychains
 abbr -a tl tldr
 abbr -a dig "dig +nostats +nocomments +nocmd"
