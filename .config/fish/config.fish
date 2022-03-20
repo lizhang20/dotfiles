@@ -92,7 +92,7 @@ function fish_prompt
     # echo -n (hostname)" "
 
     # Show current directory
-    set_color yellow
+    set_color brblue 
     echo -n ' '(prompt_pwd)
 
     # Only show current folder name if not in $HOME
@@ -101,10 +101,11 @@ function fish_prompt
         # echo -n (basename $PWD)
     # end
 
-    set_color green
+    set_color brgreen
     printf '%s ' (__fish_git_prompt)
     set_color red
-    echo -n (set_color red)'❯'(set_color yellow)'❯'(set_color green)'❯ '
+    # echo -n (set_color red)'❯'(set_color yellow)'❯'(set_color green)'❯ '
+    echo -n (set_color brgrey)'❯❯❯ '
     set_color normal
 end
 
