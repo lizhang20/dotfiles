@@ -4,6 +4,7 @@
 
 abbr -a f ffmpeg
 abbr -a mv "mv -v"
+abbr -a ad "adb devices"
 
 abbr -a pc proxychains
 abbr -a tl tldr
