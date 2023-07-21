@@ -20,7 +20,6 @@
 
 # Logs and databases #
 ######################
-*.log
 *.sqlite
 *.db
 
