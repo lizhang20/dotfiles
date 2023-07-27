@@ -133,4 +133,3 @@ end
 if test -f ~/.fish.config.local
     source ~/.fish.config.local
 end
-
