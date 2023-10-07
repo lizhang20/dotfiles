@@ -1,13 +1,10 @@
-# because of force flag = true, 
-# note that using this script will symlink all config files shown in this directory to your machine.
-
 - defaults:
     link:
-      # when create is true, create parent directories to the link
+      # create parent directories to the link
       create: true
-      # removes old target if it's a symlink
+      # remove old target if it is a symlink
       relink: true
-      # force removes the old target, file or folder
+      # remove the old target, file or folder
       # if you want to change all dotfiles on this machine to dotfiles in this folder, set force=true
       # force: true
       # glob treats * as a wildcard, so perform link operations on all matches
@@ -28,8 +25,8 @@
 
     ~/.vimrc: 
       path: .vimrc
-      # always overwrite .vimrc
-      force: true
+      # overwrite .vimrc or not
+      force: false
 
     # fish
     ~/.config/fish/: .config/fish/*
@@ -37,6 +34,8 @@
     ~/.clang-format: .clang-format
 
     ~/.config/nvim/: .config/nvim/*
+
+    ~/.aria2/aria2.conf: aria2.conf
 
 - shell:
   # - git submodule init
