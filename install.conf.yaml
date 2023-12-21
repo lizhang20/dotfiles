@@ -10,7 +10,7 @@
       # glob treats * as a wildcard, so perform link operations on all matches
       glob: true
       
-- clean: ['~', '~/.config']
+- clean: ['~/.vim', '~/.config', '~/.aria2']
 
 - link:
     ~/.bashrc: .bashrc
@@ -26,7 +26,7 @@
     ~/.vimrc: 
       path: .vimrc
       # overwrite .vimrc or not
-      force: false
+      # force: false
 
     # fish
     ~/.config/fish/: .config/fish/*
@@ -36,10 +36,3 @@
     ~/.config/nvim/: .config/nvim/*
 
     ~/.aria2/aria2.conf: aria2.conf
-
-- shell:
-  # - git submodule init
-  # - git submodule update
-  # sometimes you will change your .gitmodules
-  # git submodule sync to copy the new configuration from .gitmodules to .git/config
-  - git submodule sync --recursive
