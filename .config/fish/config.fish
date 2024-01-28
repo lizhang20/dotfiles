@@ -6,15 +6,9 @@ abbr -a f ffmpeg
 abbr -a mv "mv -v"
 abbr -a ad "adb devices"
 
-abbr -a pc proxychains
 abbr -a tl tldr
 abbr -a dig "dig +nostats +nocomments +nocmd"
 
-# Kubernetes
-#
-abbr -a k kubectl
-abbr -a kd "kubectl delete -f"
-abbr -a ka "kubectl apply -f"
 
 # Git
 #
@@ -32,19 +26,15 @@ abbr -a timestamp "date +%s%3N"
 #
 abbr -a his "history | awk '{print \$1}' | sort | uniq -c | sort | tail -n10"
 
-# VPN using openconnect
+# Use 'eza' replace 'ls'
 #
-abbr -a vpn "sudo openconnect --protocol=gp vpn.bupt.edu.cn"
-
-# Use 'exa' replace 'ls'
-#
-if command -v exa > /dev/null
-    abbr -a l 'exa'
-    abbr -a ls 'exa'
+if command -v eza > /dev/null
+    abbr -a l 'eza'
+    abbr -a ls 'eza'
     # ll with newest-order
-    abbr -a ll 'exa -l --sort=newest'
-    abbr -a la 'exa -la'
-    abbr -a tree 'exa --tree' # --level can be set by user
+    abbr -a ll 'eza -l --sort=newest'
+    abbr -a la 'eza -la'
+    abbr -a tree 'eza --tree' # --level can be set by user
 end
 
 
@@ -117,14 +107,6 @@ function sdl
     echo "sudo $history[1]"
     echo ""
     eval command sudo $history[1]
-end
-
-# using 'pl' performs `proxychains (last-command)`
-#
-function pl
-    echo "proxychains $history[1]"
-    echo ""
-    eval command proxychains $history[1]
 end
 
 
