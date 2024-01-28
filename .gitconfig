@@ -22,3 +22,7 @@
 
 [init]
 	defaultBranch = main
+[https]
+	proxy = http://localhost:8899
+[http]
+	proxy = http://localhost:8899
