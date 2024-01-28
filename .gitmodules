@@ -1,6 +1,3 @@
-[submodule ".vim/pack/vendor/start/ctrlp.vim"]
-	path = .vim/pack/vendor/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule ".vim/pack/vendor/start/lightline"]
 	path = .vim/pack/vendor/start/lightline
 	url = https://github.com/itchyny/lightline.vim.git
@@ -8,24 +5,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule ".vim/pack/vendor/start/ack.vim"]
-	path = .vim/pack/vendor/start/ack.vim
-	url = https://github.com/mileszs/ack.vim.git
-[submodule ".vim/pack/vendor/start/vim-silicon"]
-	path = .vim/pack/vendor/start/vim-silicon
-	url = https://github.com/segeljakt/vim-silicon.git
-[submodule ".vim/pack/vendor/start/rust.vim"]
-	path = .vim/pack/vendor/start/rust.vim
-	url = https://github.com/rust-lang/rust.vim
-[submodule ".vim/pack/vendor/start/vim-sneak"]
-	path = .vim/pack/vendor/start/vim-sneak
-	url = git://github.com/justinmk/vim-sneak.git
-[submodule ".vim/pack/vendor/start/vim-multiple-cursors"]
-	path = .vim/pack/vendor/start/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
 [submodule ".vim/pack/vendor/start/vim-go"]
 	path = .vim/pack/vendor/start/vim-go
 	url = https://github.com/fatih/vim-go.git
-[submodule ".vim/pack/vendor/start/wildfire.vim"]
-	path = .vim/pack/vendor/start/wildfire.vim
-	url = https://github.com/gcmt/wildfire.vim.git
